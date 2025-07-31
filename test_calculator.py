@@ -1,3 +1,7 @@
+#https://github.com/USMarine109/lab10-swe
+# Partner 1: Kenneth Nguyen
+# Partner 2: Lauren Castello
+
 import unittest
 from calculator import add, sub
 
