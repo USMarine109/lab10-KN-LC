@@ -1,12 +1,14 @@
+#https://github.com/USMarine109/lab10-swe
+# Partner 1: Kenneth Nguyen
+# Partner 2: Lauren Castello
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
 
 One function per operation, in order.
 """
-#https://github.com/USMarine109/lab10-swe
-# Partner 1: Kenneth Nguyen
-# Partner 2: Lauren Castello
+
 
 import math
 # First example
