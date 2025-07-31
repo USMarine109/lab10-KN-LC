@@ -3,7 +3,7 @@
 # Partner 2: Lauren Castello
 
 import unittest
-from calculator import add, subtract, mul, div, logarithm, log, hypotenuse, square_root
+from calculator import add, subtract, mul, div, logarithm, hypotenuse, square_root
 import math
 
 
