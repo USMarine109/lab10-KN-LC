@@ -24,11 +24,6 @@ def sub(a, b):
 def mul(a, b):
     return a * b
 
-def div(a, b):
-    if a == 0:
-        raise ZeroDivisionError
-    return b / a
-
 def log(a, b):
     return log(b, a) #raise ValueError
 
