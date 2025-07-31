@@ -3,7 +3,9 @@
 # Partner 2: Lauren Castello
 
 import unittest
-from calculator import add, sub
+from calculator import add, subtract, mul, div, logarithm, log, hypotenuse, square_root
+import math
+
 
 class TestCalculator(unittest.TestCase):
 
@@ -41,7 +43,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(1, 10)
+            logarithm(1, 10)
 
     
     ######## Partner 1
