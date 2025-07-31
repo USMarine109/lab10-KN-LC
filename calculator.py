@@ -4,7 +4,7 @@ calculator.py
 
 One function per operation, in order.
 """
-#https://github.com/USMarine109/lab10-swe
+# https://github.com/USMarine109/lab10-swe
 # Partner 1: Kenneth Nguyen
 # Partner 2: Lauren Castello
 
