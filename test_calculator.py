@@ -11,11 +11,15 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 1
-    # def test_multiply(self): # 3 assertions
-    #     fill in code
+    def test_multiply(self):
+        self.assertEqual(mul(3, 4))
+        self.assertEqual(mul(2, 3))
+        self.assertEqual(mul(12, 12))
 
-    # def test_divide(self): # 3 assertions
-    #     fill in code
+    def test_divide(self): 
+        self.assertAlmostEqual(div(3, 0))# 3 assertions
+        self.assertEqual(div(12, 3))
+        self.assertAlmostEqual(div(12, 5))
     # ##########################
 
     ######## Partner 2
@@ -34,16 +38,23 @@ class TestCalculator(unittest.TestCase):
     # ##########################
     
     ######## Partner 1
-    # def test_log_invalid_argument(self): # 1 assertion
+    def test_log_invalid_argument(self):
+        self.assertEqual(logarithm(0,4)) # 1 assertion
     #     # call log function inside, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     logarithm(0, 5)
     #     fill in code
 
-    # def test_hypotenuse(self): # 3 assertions
-    #     fill in code
+    def test_hypotenuse(self): 
+        self.assertAlmostEqual(hypotenuse(7,6))# 3 assertions
+        self.assertEqual(hypotenuse(8,7))
+        self.assertEqual(hypotenuse(2,5))
 
-    # def test_sqrt(self): # 3 assertions
+
+    def test_sqrt(self): 
+        self.assertEqual(square_root(-4))
+        self.assertAlmostEqual(square_root(1))
+        self.assertEqual(square_root(16))
     #     # Test for invalid argument, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #    square_root(NUM)
