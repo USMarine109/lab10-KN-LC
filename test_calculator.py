@@ -1,4 +1,4 @@
-#https://github.com/USMarine109/lab10-swe
+# https://github.com/USMarine109/lab10-swe
 # Partner 1: Kenneth Nguyen
 # Partner 2: Lauren Castello
 
@@ -26,8 +26,8 @@ class TestCalculator(unittest.TestCase):
 
     def test_divide(self): 
         self.assertAlmostEqual(div(3, 0), 0),# 3 assertions
-        self.assertEqual(div(12, 3))
-        self.assertAlmostEqual(div(12, 5), 0)
+        self.assertEqual(div(12, 3), 4)
+        self.assertAlmostEqual(div(12, 5), 2.4)
     # ##########################
 
     def test_divide_by_zero(self): # 1 assertion
@@ -53,9 +53,9 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
 
     def test_hypotenuse(self): 
-        self.assertAlmostEqual(hypotenuse(7,6))# 3 assertions
-        self.assertEqual(hypotenuse(8,6))
-        self.assertEqual(hypotenuse(2,5))
+        self.assertAlmostEqual(hypotenuse(7,6), 9.22)# 3 assertions
+        self.assertEqual(hypotenuse(8,6), 10)
+        self.assertAlmostEqual(hypotenuse(2,5), 5.39)
 
 
     def test_sqrt(self): 
