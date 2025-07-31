@@ -10,6 +10,14 @@ def add(a, b):
     return a + b
     pass
 
+def square_root(a):
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a)
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
+
 def sub(a, b):
     return a - b
 
@@ -17,10 +25,12 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    return b / a raise ZeroDivisionError if a == 0
+    if a == 0:
+        raise ZeroDivisionError
+    return b / a
 
 def log(a, b):
-    return log(b, a) raise ValueError
+    return log(b, a) #raise ValueError
 
 def exp(a, b):
     return exp(a, b)
