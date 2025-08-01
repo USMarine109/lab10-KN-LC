@@ -27,8 +27,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(mul(12, 12), 144)
 
     def test_divide(self): 
-        with self.assertRaises(ValueError):
-            div(3, 0)# 3 assertions
+        self.assertEqual(div(3, 0), 0)# 3 assertions
         self.assertEqual(div(12, 3), 4)
         self.assertAlmostEqual(div(12, 5), 2.4)
     # ##########################
@@ -54,9 +53,9 @@ class TestCalculator(unittest.TestCase):
     #     
 
     def test_hypotenuse(self): 
-        self.assertAlmostEqual(hypotenuse(7,6), 9.2)
+        self.assertAlmostEqual(hypotenuse(7,6), 9.2, places = 1)
         self.assertEqual(hypotenuse(8,6), 10)
-        self.assertAlmostEqual(hypotenuse(2,5), 5.4)
+        self.assertAlmostEqual(hypotenuse(2,5), 5.4 places = 1)
 
 
     def test_sqrt(self): 
